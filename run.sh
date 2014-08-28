@@ -1,7 +1,6 @@
 #!/bin/bash
 
-GRAPHITE="ec2-50-112-147-23.us-west-2.compute.amazonaws.com"
-# GRAPHITE="localhost"
+GRAPHITE="localhost"
 
 node ./cw2graphite.js \
   --region 'us-west-2' \
