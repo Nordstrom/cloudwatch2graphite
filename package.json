@@ -6,7 +6,8 @@
   "dependencies": {
     "aws2js": "0.8.3",
     "dateformat": "1.0.6-1.2.3",
-    "optparse": "1.0.4"
+    "optparse": "1.0.4",
+    "snyk": "^1.316.1"
   },
   "maintainers": [
     {
@@ -14,7 +15,7 @@
       "email": "ca_github@frenchguys.com"
     }
   ],
-    "contributors": [
+  "contributors": [
     {
       "name": "Erik Dasque",
       "email": "ca_github@frenchguys.com"
@@ -49,12 +50,14 @@
     "node": ">=0.8.0"
   },
   "scripts": {
-    "start": "node cw2graphite.js"
+    "start": "node cw2graphite.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
-    "licenses": [
-        {
-            "type": "MIT"
-        }
-    ]
-
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "snyk": true
 }
